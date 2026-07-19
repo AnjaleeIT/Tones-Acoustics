@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TONES ACOUSTIC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-fade">
+
+<div class="page-loader" id="pageLoader"><div class="loader-bar"></div></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html#home" class="brand">TONES<span>ACOUSTIC</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#events">Events</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <!-- Highlighted Soft Ember Canvas Background -->
+  <canvas id="emberCanvas" class="matrix-canvas"></canvas>
+  
+  <div class="hero-eyebrow" data-reveal>Eight Piece &mdash; Acoustic Collective</div>
+  <h1 data-reveal>TONES<br>ACOUSTIC</h1>
+  <p class="hero-tagline" data-reveal>Based in Bandarawela, playing across Badulla and beyond. Eight voices, one sound &mdash; raw acoustic energy for any function or stage.</p>
+  <div class="hero-cta">
+    <a href="index.html#events" class="btn btn-solid">See tour dates</a>
+    <a href="index.html#about" class="btn btn-outline">Meet the band</a>
+  </div>
+</section>
+
+<div class="stub-divider"><div class="notch left"></div><div class="notch right"></div></div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="section-label" data-reveal>Who we are</div>
+    <h2 class="section-title" data-reveal>The band</h2>
+    <div class="about-grid">
+      <div class="about-photo" data-reveal>
+        <img src="8.jpg" alt="TONES ACOUSTIC band promotional photo">
+      </div>
+      <div class="about-text" data-reveal>
+        <p>TONES ACOUSTIC is an eight-member acoustic collective based in Bandarawela, proudly known as one of the go-to live bands in Badulla for functions of every kind &mdash; weddings, corporate events, festivals, and private parties.</p>
+        <p>What started as a small hill country jam session has grown into a full eight piece live act, blending acoustic guitars, percussion, keys, and layered vocals into a sound that feels just as at home in an intimate hall as it does on an open-air festival stage.</p>
+        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="about-details.html" class="btn btn-solid">More Details About Us</a>
+          <a href="index.html#contact" class="btn btn-outline">Book our band</a>
+        </div>
+      </div>
+    </div>
+    
+    <div style="margin-top: 64px;" class="section-label" data-reveal>Lineup</div>
+    <div class="members-grid">
+      <div class="member-card" data-reveal><div class="member-avatar">01</div><div class="member-name">Member One</div><div class="member-role">Lead Vocals</div></div>
+      <div class="member-card" data-reveal><div class="member-avatar">02</div><div class="member-name">Member Two</div><div class="member-role">Acoustic Guitar</div></div>
+      <div class="member-card" data-reveal><div class="member-avatar">03</div><div class="member-name">Member Three</div><div class="member-role">Lead Guitar</div></div>
+      <div class="member-card" data-reveal><div class="member-avatar">04</div><div class="member-name">Member Four</div><div class="member-role">Bass</div></div>
+      <div class="member-card" data-reveal><div class="member-avatar">05</div><div class="member-name">Member Five</div><div class="member-role">Percussion</div></div>
+      <div class="member-card" data-reveal><div class="member-avatar">06</div><div class="member-name">Member Six</div><div class="member-role">Keys / Accordion</div></div>
+      <div class="member-card" data-reveal><div class="member-avatar">07</div><div class="member-name">Member Seven</div><div class="member-role">Rap / Vocals</div></div>
+      <div class="member-card" data-reveal><div class="member-avatar">08</div><div class="member-name">Member Eight</div><div class="member-role">Drums</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="stub-divider"><div class="notch left"></div><div class="notch right"></div></div>
+
+<!-- EVENTS -->
+<section id="events" class="section">
+  <div class="wrap">
+    <div class="section-label" data-reveal>Live</div>
+    <h2 class="section-title" data-reveal>Upcoming shows</h2>
+    <div class="event-grid" id="eventGrid">
+      <!-- Generated Dynamically via script.js -->
+    </div>
+  </div>
+</section>
+
+<div class="stub-divider"><div class="notch left"></div><div class="notch right"></div></div>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="section-label" data-reveal>Get in touch</div>
+    <h2 class="section-title" data-reveal>Contact</h2>
+    <div class="contact-wrap" data-reveal>
+      <div class="contact-grid">
+        <div class="contact-side">
+          <h3>Booking &amp; press</h3>
+          <p>For shows, functions, or private events across Badulla and beyond, send us a message and we'll get back to you within a few days.</p>
+          <div class="contact-meta">
+            <strong>Management</strong>
+            hello@tonesacoustic.band
+            <strong>Based in</strong>
+            Bandarawela, Sri Lanka
+          </div>
+        </div>
+        <form id="contactForm" novalidate>
+          <div class="field" id="nameField">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <div class="field-error">Please enter your name.</div>
+          </div>
+          <div class="field" id="emailField">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <div class="field-error">Please enter a valid email address.</div>
+          </div>
+          <div class="field" id="messageField">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="What's this about?"></textarea>
+            <div class="field-error">Please enter a message.</div>
+          </div>
+          <button type="submit" class="btn btn-solid">Send message</button>
+          <div class="form-msg success" id="formMsg">Thanks &mdash; your message has been sent. We'll be in touch soon.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">TONES<span>ACOUSTIC</span></div>
+        <p>Eight-piece acoustic band based in Bandarawela, playing functions and shows across Badulla and beyond.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="Spotify">SP</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Tones Acoustic. All rights reserved.</span>
+      <span>Site by Anjalee Jayaweera</span>
+    </div>
+  </div>
+</footer>
+
+<script src="events-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
